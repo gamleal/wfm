@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wireframe</title>
+    <!-- CSS -->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .col {
+            position: relative;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .container .row {
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container-xl {
+            margin-top: 40px;
+        }
+
+        .mr-8 {
+            margin-right: 8px;
+        }
+
+        .mt-8 {
+            margin-top: 8px;
+        }
+
+        .mt-32 {
+            margin-top: 32px;
+        }
+
+        .section-1 {
+            .s1-img-container {
+                height: 700px;
+                background-color: gray;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                padding: 30px 0 0;
+
+                .s1-bubble-container1 {
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    text-align: right;
+                    top: -30px;
+                }
+
+                .s1-iframe {
+                    position: relative;
+                    overflow: hidden;
+                    padding-top: 56.25%;
+                    margin-right: 10px;
+                    box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.2);
+
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .s1-image-b2 {
+                    position: absolute;
+                    top: 625px;
+                    z-index: 1;
+                }
+
+                .s1-image-b1 {
+                    width: fit-content;
+                    overflow: hidden;
+                }
+
+                .s1-container {
+                    display: flex;
+                    flex-direction: column;
+                    height: fit-content;
+                    margin: auto;
+                    width: 100%;
+                    padding-left: 10px;
+                }
+
+                .s1-container1 {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .s1-container2 {
+                    display: flex;
+                }
+
+                .s1-content1 {
+                    width: fit-content;
+                    height: fit-content;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    gap: 10px;
+
+                    p {
+                        max-width: 375px;
+                    }
+                }
+
+                .s1-content2 {
+                    margin-left: 8%;
+                    z-index: 2;
+                }
+
+                .s1-content3 {
+                    width: fit-content;
+                    margin: auto;
+                    margin-top: 40px;
+                    z-index: 2;
+                }
+            }
+
+            .banner-p1 {
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                margin-top: 24px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .banner-p2 {
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                margin-top: 24px;
+
+                span {
+                    font-weight: 700;
+                }
+
+                span:first-of-type {
+                    color: white;
+                }
+            }
+
+            .banner-p3 {
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                margin-top: 24px;
+                text-align: center;
+                padding: 0 50px;
+                max-width: 1170px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .section-1 {
+                .s1-img-container {
+                    height: fit-content;
+                    background-color: gray;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                }
+
+                .s1-img-container {
+
+                    .s1-content3 {
+                        width: fit-content;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 60px;
+                    }
+
+                    .s1-container {
+                        display: flex;
+                        flex-direction: column;
+                        height: fit-content;
+                        margin: auto;
+                        width: 100%;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+
+                    .s1-container1 {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .s1-image-b1 {
+                        width: fit-content;
+                        overflow: hidden;
+                        width: 350px;
+                    }
+
+                    .s1-content1 {
+                        width: fit-content;
+                        height: fit-content;
+                        margin-bottom: auto;
+                        margin: 80px auto 10px;
+                        text-align: center;
+                        gap: 10px;
+                    }
+
+                    .s1-content2 {
+                        width: fit-content;
+                        max-width: 100%;
+                        margin: auto;
+                        z-index: 2;
+                        margin-top: 40px;
+                        padding: 0;
+                    }
+
+                    .s1-iframe {
+                        position: relative;
+                        overflow: hidden;
+                        padding-top: 56.25%;
+                    }
+
+                    .s1-bubble-container2 {
+                        position: relative;
+                    }
+
+                    .s1-image-b2 {
+                        position: absolute;
+                        top: -215px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        .section-2 {
+            background: white;
+            height: fit-content;
+
+            .s2-content {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+
+                .s2-div1 {
+                    margin-bottom: 40px;
+
+                    .s2-title {
+                        font-family: Poppins;
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 46px;
+                        text-align: center;
+
+                        span {
+                            color: gray;
+                        }
+                    }
+                }
+
+                .s2-div2 {
+                    display: flex;
+                    flex-direction: row;
+                    width: fit-content;
+                    margin: auto;
+
+                    .s2-button-row {
+                        display: flex;
+                        z-index: 2;
+
+                        .s2-button {
+                            width: 344px;
+                            height: 96px;
+                            background: white;
+                            border-radius: 12px;
+                            display: flex;
+                            cursor: pointer;
+                            margin: 7px 20px 7px 0;
+                            box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.2);
+                            cursor: pointer;
+                            z-index: 2;
+
+                            .s2-number {
+                                font-family: Poppins;
+                                font-size: 64px;
+                                font-weight: 700;
+                                line-height: 50px;
+                                text-align: center;
+                                min-width: 25%;
+                                margin: auto 0;
+                                color: gray;
+                            }
+
+                            .s2-text-box {
+                                height: fit-content;
+                                border-left: 3px solid gray;
+                                padding-left: 20px;
+                                margin: auto 0;
+
+                                .s2-text {
+                                    font-family: Poppins;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 30px;
+                                    text-align: left;
+                                    color: gray;
+                                }
+                            }
+                        }
+
+                        .s2-button-arrow {
+                            padding: 17px 0;
+                            display: none;
+
+                            .s2-arrow {
+                                height: 72px;
+                            }
+                        }
+                    }
+
+                    .s2-button-row.s2-active {
+                        .s2-button {
+                            background: gray;
+
+                            .s2-number {
+                                color: white;
+                            }
+
+                            .s2-text-box {
+                                border-left: 3px solid white;
+
+                                .s2-text {
+                                    font-family: Poppins;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 30px;
+                                    text-align: left;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .s2-button-arrow {
+                            display: block;
+                        }
+                    }
+                }
+
+                .s2-under2 {
+                    max-width: 90%;
+                    margin-left: 20px;
+                    background: white;
+                    border-radius: 20px;
+                    box-shadow: 1px 1px 11px 5px rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            img#s2-display {
+                max-width: 100%;
+                width: 700px;
+                max-height: 393px;
+                object-fit: fill;
+                border-radius: 20px;
+                object-position: bottom;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .section-2 {
+                .s2-content {
+                    .s2-div1 {
+                        .s2-title {
+                            padding: 0 20px;
+                        }
+                    }
+
+                    .s2-div2 {
+                        display: flex;
+                        flex-direction: column;
+                        width: fit-content;
+                        margin: auto;
+
+                        .s2-under1 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: fit-content;
+                            justify-content: center;
+                            flex-direction: row;
+                        }
+
+                        .s2-button-row {
+                            .s2-button {
+                                margin: 7px 0 30px 20px;
+                            }
+                        }
+
+                        .s2-button-row.s2-active {
+                            .s2-button-arrow {
+                                display: none !important;
+                            }
+                        }
+                    }
+
+                    .s2-under2 {
+                        margin: 30px auto auto;
+                    }
+                }
+            }
+        }
+
+        .section-3 {
+            background-color: gray;
+            background-size: cover;
+            padding: 60px 20px;
+
+            .s3-div-t {
+                margin: 0 auto 50px;
+                height: fit-content;
+
+                .s3-title {
+                    font-family: Poppins;
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    text-align: center;
+
+                    span {
+                        color: white;
+                    }
+                }
+            }
+
+            .single-item-1 .lp-right-arrow {
+                position: absolute;
+                right: 200px;
+                top: 200px;
+            }
+
+            .single-item-1 .lp-left-arrow {
+                position: absolute;
+                left: 190px;
+                top: 200px;
+            }
+
+            .single-item-1 li {
+                background: black;
+                border: none;
+                padding: 12px 19px;
+                border-radius: 40px;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .dl-1 li.dot-li-1 {
+                background: black;
+                border: none;
+                padding: 3px;
+                border-radius: 40px;
+                height: 5px !important;
+                width: 5px !important;
+            }
+
+            .dl-2 li.dot-li-2 {
+                background: black;
+                border: none;
+                padding: 3px;
+                border-radius: 40px;
+                height: 5px !important;
+                width: 5px !important;
+            }
+
+            .dl-3 li.dot-li-3 {
+                background: black;
+                border: none;
+                padding: 3px;
+                border-radius: 40px;
+                height: 5px !important;
+                width: 5px !important;
+            }
+
+            .single-item-1 li button {
+                background: none;
+                border: none;
+                font-size: inherit;
+                font-weight: inherit;
+                color: inherit;
+            }
+
+            .single-item-1 ul {
+                display: flex !important;
+                list-style: none;
+                width: 350px;
+                justify-content: space-between;
+                margin: auto;
+                padding-top: 50px;
+            }
+
+            ul.dl-1 {
+                display: flex !important;
+                list-style: none;
+                width: 75px;
+                justify-content: space-between;
+            }
+
+            ul.dl-2 {
+                display: flex !important;
+                list-style: none;
+                width: 75px;
+                justify-content: space-between;
+            }
+
+            ul.dl-3 {
+                display: flex !important;
+                list-style: none;
+                width: 75px;
+                justify-content: space-between;
+            }
+
+            .single-item-dots {
+                display: flex;
+                width: 300px;
+                justify-content: space-around;
+                margin: auto;
+                margin-top: -27px;
+            }
+
+            li.slick-active {
+                background: white !important;
+                color: gray !important;
+            }
+
+            .slick-slide img {
+                display: block;
+                width: 900px;
+                max-width: 80%;
+                margin: auto;
+                width: 130px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .section-3 {
+                .single-item-1 ul {
+                    width: 250px !important;
+                }
+
+                .single-item-dots {
+                    display: none !important;
+                }
+            }
+        }
+
+        .adopt---container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .adopt---image {
+            width: fit-content;
+            margin-left: 16%;
+            margin-bottom: 75px;
+            max-width: 45%;
+            margin-top: 185px;
+
+            img {
+                width: -webkit-fill-available;
+            }
+        }
+
+        .adopt---why {
+            margin-right: 15px;
+            width: 100%;
+        }
+
+        .adopt---why-Title {
+            font-size: 46px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            width: 501px;
+            color: black;
+            margin: 50px auto;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .adopt---why-container {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: 30px;
+        }
+
+        .adopt---reasons-text-div {
+            box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.2);
+            width: 501px;
+            height: 72px;
+            border-radius: 10px;
+            max-width: 95%;
+            margin: auto;
+            margin-bottom: 15px;
+            align-content: center;
+            background: white;
+        }
+
+        .adopt---reasons-text {
+            width: 75%;
+            display: inline-block;
+            margin-left: 25px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .adopt---why-Title-span {
+            color: gray;
+        }
+
+        .--benefits-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 40px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0px auto 50px auto;
+            max-width: 100%;
+            flex-wrap: wrap;
+            color: black;
+        }
+
+        .--benefits {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .--benefits-block {
+            background-color: gray;
+            display: inline-block;
+            border-radius: 30px;
+            width: 201px;
+            margin: 10px 35px 0;
+            padding: 20px 0;
+        }
+
+        .--benefits-content {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        .--benefits-img {
+            width: 101px;
+        }
+
+        .--benefits-img-n {
+            width: 85px;
+        }
+
+        .--benefits-text {
+            color: white;
+            font-weight: 700;
+            font-family: 'Poppins',
+                sans-serif;
+        }
+
+        .--benefits-img-div {
+            height: 120px;
+        }
+
+        .--benefits-text-div {
+            text-align: center;
+            width: 70%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .adopt---reasons {
+                margin: 30px auto;
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .adopt---why-Title {
+                margin: auto;
+                text-align: center;
+            }
+
+            .adopt---container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .adopt---image {
+                width: 60%;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .sx-bubble-container1 {
+            position: relative;
+        }
+
+        .sx-image-b1 {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            right: 0;
+        }
+
+        .container {
+            color: black;
+        }
+
+        .item-sitemap-menu h4 {
+            font-weight: 300 !important;
+        }
+
+        .foo-item-menu h5 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-size: inherit;
+            font-weight: 300 !important;
+        }
+
+        .foo-item-menu h5:hover,
+        .foo-item-menu h5:active {
+
+            outline: 0 !important;
+            font-weight: bold !important;
+
+        }
+
+        .slick-list.draggable {
+            height: fit-content !important;
+        }
+
+        .s3-s-b {
+            width: 950px;
+            height: 400px;
+            margin: auto;
+            display: flex;
+        }
+
+        .s3-s-b-i {
+            width: 360px;
+            height: 340px;
+            margin: auto 0;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 10px 0 5px -2px #00000061;
+            z-index: 3;
+        }
+
+        .s3-s-b-row {
+            width: 100%;
+            height: 64px;
+            background: white;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0px 0px 10px 1px #0000006b;
+            margin: 15px auto;
+        }
+
+        .s3-s-b-row.row-4 {
+            margin: 6px auto;
+        }
+
+        .s3-s-b-rl {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: calc(100% - 360px);
+        }
+
+        .s3-s-b-i-1 {
+            max-width: 50%;
+            margin: 85px auto 30px;
+        }
+
+        .s3-s-b-i-2.s3-s-b-i-fix {
+            img {
+                max-width: 50% !important;
+                width: 135px;
+            }
+        }
+
+        .s3-s-b-i-2.s3-s-b-i-2-nf {
+            img {
+                width: 105px;
+            }
+        }
+
+        .s3-s-b-i-2 {
+            img {
+                max-width: 40% !important;
+            }
+        }
+
+        .s3-s-b-i-3 {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 10px;
+            height: fit-content;
+            margin-top: 30px;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+
+        .s3-s-t-div {
+            height: fit-content;
+            margin: 5px 0;
+            padding-left: 35px;
+        }
+
+        .s3-s-t1 {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            text-align: left;
+            color: gray
+        }
+
+        .s3-s-t2 {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color: black
+        }
+
+        #span-slide {
+            transition: opacity 0.25s ease;
+        }
+
+        .s3-b1 {
+            padding: 0 !important;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .sh-d2 {
+                font-size: 16px;
+            }
+
+            .s3-s-b {
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .s3-s-b-i {
+                max-width: 340px;
+                height: fit-content;
+                width: fit-content;
+                margin: auto 0;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 0 10px 0px black;
+                z-index: 3;
+                margin: auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                margin-top: 10px;
+                min-width: 250px;
+            }
+
+            .s3-s-b-rl {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 90%;
+                margin: 30px auto 0;
+                min-height: 370px;
+                max-width: 630px;
+                height: fit-content;
+            }
+
+            .s3-s-b-row {
+                width: 100%;
+                height: fit-content;
+                min-height: 70px;
+                margin: 10px auto;
+                margin-right: auto;
+                padding: 0 3px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px 1px #0000006b;
+            }
+
+            .s3-s-t-div {
+                height: fit-content;
+                margin: 10px 0;
+                padding-left: 20px;
+            }
+
+            .s3-s-b-i-1 {
+                max-width: 50%;
+                margin: 20px auto 30px;
+                display: none;
+            }
+
+            .section-3 {
+                .slick-slide img {
+                    display: block;
+                    width: 900px;
+                    max-width: 80%;
+                    margin: auto;
+                    width: 250px;
+                }
+            }
+
+            .s3-s-b-i-2.s3-s-b-i-fix {
+                img {
+                    width: 250px;
+                }
+            }
+
+            .slick-track {
+                height: 560px;
+            }
+        }
+
+        .item-sitemap-menu h4 {
+            font-weight: 300 !important;
+        }
+
+        .foo-item-menu h5 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-size: inherit;
+            font-weight: 300 !important;
+        }
+
+        .foo-item-menu h5:hover,
+        .foo-item-menu h5:active {
+
+            outline: 0 !important;
+            font-weight: bold !important;
+
+        }
+
+        .s2-under1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .s3-bubble-container1 {
+            position: relative;
+
+            .s3-image-b1 {
+                position: absolute;
+                left: -20px;
+                top: -60px;
+            }
+        }
+
+        .banner-p3 span {
+            font-weight: 700;
+        }
+
+        .s2-sub-text-box {
+            position: absolute;
+        }
+
+        .s2-sub-text-box2 {
+            position: relative;
+            top: 103px;
+            left: 140px;
+            background: white;
+            height: 30px;
+            width: 180px;
+            padding: 6px 15px;
+            border-radius: 0 0 10px 10px;
+            z-index: 1;
+            box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.2);
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 15px;
+            text-align: left;
+            color: #575756;
+        }
+
+        .s2-active .s2-sub-text-box2 {
+            background: gray;
+            color: white;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .section-2 {
+                .s2-content {
+                    .s2-div2 {
+                        .s2-under1 {
+                            display: flex;
+                            width: fit-content;
+                            justify-content: center;
+                            flex-direction: column;
+                            margin: auto auto 30px;
+                        }
+                    }
+                }
+            }
+
+            .section-3 .slick-slide {
+                max-height: fit-content !important;
+            }
+        }
+
+        .section-3 .slick-slide {
+            max-height: 400px;
+        }
+
+        .section-header {
+            position: fixed;
+            height: 100px;
+            background: black;
+            width: 100%;
+            z-index: 10;
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 14px;
+
+            div {
+                display: flex;
+                height: 100%;
+                margin: auto;
+                max-width: 1200px;
+            }
+
+            .sh-d1 {
+                width: 199px;
+                margin: auto;
+                height: fit-content;
+                font-size: 20px;
+                padding: 0 20px 0;
+                border-right: 3px solid white;
+            }
+
+            .sh-d2 {
+                display: flex;
+                justify-content: left;
+                width: 100%;
+                padding: 0;
+                height: fit-content;
+
+                div {
+                    margin: auto 20px;
+
+                    p {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .s2-contents{
+            display: flex;
+            flex-direction: row;
+            margin: 100px auto;
+
+            .s2-d1{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 300px;
+
+                .s2-d1-d1{
+                    background: gray;
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 8px;
+                    margin: 0 auto 20px;
+
+                    .s2-email{
+                        width: 50px;
+                        margin: 13px;
+                    }
+
+                    .s2-whatsapp{
+                        width: 50px;
+                        margin: 13px;
+                    }
+                }
+                .s2-d1-d2{
+                    font-family: Poppins;
+                    font-size: 25px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+                .s2-d1-d3{
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+    <!-- Fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section class="section-header desktop">
+        <div>
+            <div class="sh-d1">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="sh-d2">
+                <div>
+                    <p id="sec-1">Lorem ipsum</p>
+                </div>
+                <div>
+                    <p id="sec-2">Lorem ipsum</p>
+                </div>
+                <div>
+                    <p id="sec-3">Lorem ipsum</p>
+                </div>
+                <div>
+                    <p id="sec-4">Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-1 desktop">
+        <div class="container">
+            <div class="s1-img-container">
+                <div class="s1-container">
+                    <div class="s1-container1">
+                        <div class="s1-content1">
+
+                            <p class="banner-p2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident.
+                            </p>
+                        </div>
+                        <div class="s1-content2">
+                            <img src="./assets/square.png" />
+                        </div>
+                    </div>
+                    <div class="s1-container2">
+                        <div class="s1-content3">
+                            <p class="banner-p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-x">
+        <div class="adopt---container">
+            <div class="adopt---why">
+                <div class="adopt---why-container">
+                    <div class="adopt---why-Title"><span>Lorem ipsum dolor sit amet</span></div>
+
+                    <div class="adopt---reasons">
+                        <div class="adopt---reasons-text-div"><span class="adopt---reasons-text">Lorem ipsum dolor sit
+                                amet</span></div>
+
+                        <div class="adopt---reasons-text-div"><span class="adopt---reasons-text">Lorem ipsum dolor sit
+                                amet</span></div>
+
+                        <div class="adopt---reasons-text-div"><span class="adopt---reasons-text">Lorem ipsum dolor sit
+                                amet</span></div>
+
+                        <div class="adopt---reasons-text-div"><span class="adopt---reasons-text">Lorem ipsum dolor sit
+                                amet</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="--benefits-container">
+
+                <div class="--benefits">
+                    <div class="--benefits-block">
+                        <div class="--benefits-content">
+                            <div class="--benefits-img-div"><img class="--benefits-img" src="./assets/square.png" />
+                            </div>
+
+                            <div class="--benefits-text-div"><span class="--benefits-text">Lorem ipsum</span></div>
+                        </div>
+                    </div>
+
+                    <div class="--benefits-block">
+                        <div class="--benefits-content">
+                            <div class="--benefits-img-div"><img class="--benefits-img" src="./assets/square.png" />
+                            </div>
+
+                            <div class="--benefits-text-div"><span class="--benefits-text">Lorem ipsum</span></div>
+                        </div>
+                    </div>
+
+                    <div class="--benefits-block">
+                        <div class="--benefits-content">
+                            <div class="--benefits-img-div"><img class="--benefits-img-n" src="./assets/square.png" />
+                            </div>
+
+                            <div class="--benefits-text-div"><span class="--benefits-text">Lorem ipsum</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-3">
+        <div class="container s3-slider">
+            <div class="s3-div-t">
+                <h3 class="s3-title">Lorem ipsum dolor sit amet <span id="span-slide">xxxxx</span> consectetur
+                    adipiscing</h3>
+            </div>
+
+            <div class="single-item-1">
+                <div class="s3-b1 col">
+                    <div class="s3-s-b">
+                        <div class="s3-s-b-i">
+                            <div class="s3-s-b-i-1">
+                                <img src="./assets/square.png">
+                            </div>
+                            <div class="s3-s-b-i-3">
+                                Lorem<br />ipsum
+                            </div>
+                        </div>
+                        <div class="s3-s-b-rl">
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s3-b1 col">
+                    <div class="s3-s-b">
+                        <div class="s3-s-b-i">
+                            <div class="s3-s-b-i-1">
+                                <img src="./assets/square.png">
+                            </div>
+                            <div class="s3-s-b-i-3">
+                                Lorem<br />ipsum
+                            </div>
+                        </div>
+                        <div class="s3-s-b-rl">
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s3-b1 col">
+                    <div class="s3-s-b">
+                        <div class="s3-s-b-i">
+                            <div class="s3-s-b-i-1">
+                                <img src="./assets/square.png">
+                            </div>
+                            <div class="s3-s-b-i-3">
+                                Lorem<br />ipsum
+                            </div>
+                        </div>
+                        <div class="s3-s-b-rl">
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="s3-s-b-row">
+                                <div class="s3-s-t-div">
+                                    <p class="s3-s-t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    <p class="s3-s-t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item-dots">
+                <ul class="dl-1">
+                    <li class="dot-li-1 dot-li-h">&nbsp;</li>
+                    <li class="dot-li-1 dot-li-h">&nbsp;</li>
+                    <li class="dot-li-1">&nbsp;</li>
+                    <li class="dot-li-1">&nbsp;</li>
+                    <li class="dot-li-1">&nbsp;</li>
+                </ul>
+
+                <ul class="dl-2">
+                    <li class="dot-li-2 dot-li-h">&nbsp;</li>
+                    <li class="dot-li-2 dot-li-h">&nbsp;</li>
+                    <li class="dot-li-2">&nbsp;</li>
+                    <li class="dot-li-2">&nbsp;</li>
+                    <li class="dot-li-2">&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="container">
+            <div class="s2-content">
+                <div class="s2-div1">
+                    <h3 class="s2-title">Meus Contatos</h3>
+                </div>
+
+                <div class="s2-contents">
+                    <div class="s2-d1">
+                        <div class="s2-d1-d1">
+                            <img class="s2-whatsapp" src="./assets/square.png" />
+                        </div>
+                        <div class="s2-d1-d2">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="s2-d1-d3">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="s2-d1">
+                        <div class="s2-d1-d1">
+                            <img class="s2-email" src="./assets/square.png" />
+                        </div>
+                        <div class="s2-d1-d2">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="s2-d1-d3">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        var buttons = document.querySelectorAll('.s2-button');
+
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var parent = button.parentElement;
+
+                if (!parent.classList.contains('s2-active')) {
+                    var activeElements = document.querySelectorAll('.s2-active');
+                    activeElements.forEach(function (element) {
+                        element.classList.remove('s2-active');
+                    });
+                    parent.classList.add('s2-active');
+
+                    var displayImage = document.getElementById('s2-display');
+                    displayImage.src = './assets/' + parent.id + '.png';
+                }
+            });
+        });
+
+        $(".single-item-1").slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            arrows: false,
+        });
+
+        var elements = Array.from(document.querySelectorAll('li[role="presentation"]'));
+        var dotLi1Elements = Array.from(document.querySelectorAll('.dot-li-1'));
+        var dotLi2Elements = Array.from(document.querySelectorAll('.dot-li-2'));
+        var dotLi3Elements = Array.from(document.querySelectorAll('.dot-li-3'));
+
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.attributeName === "class") {
+                    var currentClassState = mutation.target.classList;
+                    if (currentClassState.contains("slick-active")) {
+                        var index = elements.indexOf(mutation.target);
+                        elements.forEach(function (element, i) {
+                            if (i < index) {
+                                element.style.backgroundColor = 'white';
+                                element.style.color = 'gray';
+
+                            } else if (i > index) {
+                                element.style.backgroundColor = 'black';
+                                element.style.color = 'white';
+                            }
+                        });
+
+                        var spanSlide = document.getElementById('span-slide');
+                        spanSlide.style.opacity = '0';
+                        setTimeout(function () {
+                            if (index === 1) {
+                                spanSlide.textContent = 'yyyyy';
+                            } else if (index === 2) {
+                                spanSlide.textContent = 'zzzzz';
+                            } else {
+                                spanSlide.textContent = 'xxxxx';
+                            }
+                            spanSlide.style.opacity = '1';
+                        }, 250);
+
+
+                        if (index === 1) {
+                            dotLi1Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'white';
+                            });
+                            dotLi2Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'black';
+                            });
+                            dotLi3Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'black';
+                            });
+                        } else if (index === 2) {
+                            dotLi1Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'white';
+                            });
+                            dotLi2Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'white';
+                            });
+                            dotLi3Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'black';
+                            });
+                        } else {
+                            dotLi1Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'black';
+                            });
+                            dotLi2Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'black';
+                            });
+                            dotLi3Elements.forEach(function (element) {
+                                element.style.backgroundColor = 'black';
+                            });
+                        }
+                    }
+                }
+            });
+        });
+
+        var config = { attributes: true, attributeFilter: ['class'] };
+
+        elements.forEach(function (element) {
+            observer.observe(element, config);
+        });
+        const button1 = document.getElementById('sec-1');
+        const button2 = document.getElementById('sec-2');
+        const button3 = document.getElementById('sec-3');
+        const button4 = document.getElementById('sec-4');
+
+        const section1 = document.querySelector('.section-1');
+        const sectionX = document.querySelector('.section-x');
+        const section3 = document.querySelector('.section-3');
+        const section2 = document.querySelector('.section-2');
+
+        button1.addEventListener('click', () => window.scroll({ top: section1.offsetTop - 100, behavior: 'smooth' }));
+        button2.addEventListener('click', () => window.scroll({ top: sectionX.offsetTop - 100, behavior: 'smooth' }));
+        button3.addEventListener('click', () => window.scroll({ top: section3.offsetTop - 100, behavior: 'smooth' }));
+        button4.addEventListener('click', () => window.scroll({ top: section2.offsetTop - 100, behavior: 'smooth' }));
+    </script>
+</body>
+
+</html>
